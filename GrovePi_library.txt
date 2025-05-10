@@ -1,0 +1,10 @@
+#Set Up the GrovePi Library
+
+git clone https://github.com/DexterInd/GrovePi.git
+cd GrovePi/Script
+sudo bash install.sh
+
+
+#Install Visual Studio Code on Raspberry Pi
+
+sudo apt install code -y
