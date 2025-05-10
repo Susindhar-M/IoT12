@@ -1,6 +1,6 @@
 #Set Up the GrovePi Library
 
-git clone https://github.com/DexterInd/GrovePi.git
+git clone https://github.com/DexterInd/GrovePi.git      #available public library
 cd GrovePi/Script
 sudo bash install.sh
 
