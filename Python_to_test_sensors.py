@@ -10,9 +10,8 @@ ANGLE_SENSOR = 2          # A2
 TEMP_HUM_SENSOR = 4       # D4
 PIR_SENSOR = 7            # D7
 
-# ----------------------
 # Light Sensor Test
-# ----------------------
+
 def test_light_sensor():
     try:
         value = grovepi.analogRead(LIGHT_SENSOR)
@@ -20,9 +19,9 @@ def test_light_sensor():
     except Exception as e:
         print("Error reading light sensor:", e)
 
-# ----------------------
+
 # Sound Sensor Test
-# ----------------------
+
 def test_sound_sensor():
     try:
         value = grovepi.analogRead(SOUND_SENSOR)
@@ -30,9 +29,9 @@ def test_sound_sensor():
     except Exception as e:
         print("Error reading sound sensor:", e)
 
-# ----------------------
+
 # Angle Sensor Test
-# ----------------------
+
 def test_angle_sensor():
     try:
         value = grovepi.analogRead(ANGLE_SENSOR)
@@ -40,9 +39,9 @@ def test_angle_sensor():
     except Exception as e:
         print("Error reading angle sensor:", e)
 
-# ----------------------
+
 # Temperature and Humidity Sensor Test
-# ----------------------
+
 def test_temp_humidity():
     try:
         temp, humidity = grovepi.dht(TEMP_HUM_SENSOR, 0)  # 0 for DHT11, 1 for DHT22
@@ -50,9 +49,9 @@ def test_temp_humidity():
     except Exception as e:
         print("Error reading temperature and humidity sensor:", e)
 
-# ----------------------
+
 # PIR Motion Sensor Test
-# ----------------------
+
 def test_pir_sensor():
     try:
         grovepi.pinMode(PIR_SENSOR, "INPUT")
@@ -61,9 +60,9 @@ def test_pir_sensor():
     except Exception as e:
         print("Error reading PIR sensor:", e)
 
-# ----------------------
+
 # Test All Sensors
-# ----------------------
+
 def test_all_sensors():
     print("\n--- Sensor Test Start ---")
     test_light_sensor()
